@@ -1,0 +1,60 @@
+/* HEADING GRADIENT ANIMATION */
+.heading-gradient {
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #7f00ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* GLASS CARD EFFECT */
+.glass-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* FORM INPUTS GLASS */
+.form-glass {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* BUTTON GRADIENT */
+.btn-gradient {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255,105,0,0.4);
+}
+
+/* TRAIN IMAGE ANIMATION */
+.train-img-animate {
+  transition: transform 1s ease-in-out;
+}
+
+.train-img-animate:hover {
+  transform: scale(1.03) rotate(0.5deg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px){
+  .glass-card { padding: 20px; }
+}
